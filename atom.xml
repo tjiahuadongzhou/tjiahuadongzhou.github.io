@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tjiahuadongzhou.github.io/</id>
     <title>Gridea</title>
-    <updated>2019-12-09T06:19:45.060Z</updated>
+    <updated>2019-12-09T10:35:27.190Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tjiahuadongzhou.github.io/"/>
     <link rel="self" href="https://tjiahuadongzhou.github.io//atom.xml"/>
@@ -10,6 +10,102 @@
     <logo>https://tjiahuadongzhou.github.io//images/avatar.png</logo>
     <icon>https://tjiahuadongzhou.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[CSS Flex布局]]></title>
+        <id>https://tjiahuadongzhou.github.io//post/css-flex-bu-ju</id>
+        <link href="https://tjiahuadongzhou.github.io//post/css-flex-bu-ju">
+        </link>
+        <updated>2019-12-09T10:30:23.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="flex布局教程笔记">flex布局教程笔记</h1>
+<h2 id="fex布局原理">◆fex布局原理</h2>
+<h3 id="flex是-flexible-box的缩写意为弹性布局用来为盒状模型提供最大的灵活性任何一个容器都可以指定为fex布局">flex是 flexible Box的缩写,意为&quot;弹性布局”,用来为盒状模型提供最大的灵活性,任何一个容器都可以指定为fex布局</h3>
+<h3 id="当我们为父盒子设为fex布局以后子元素的ioat-cleari和-vertical-align属性将失效">当我们为父盒子设为fex布局以后,子元素的ioat、 cleari和 vertical- align属性将失效</h3>
+<p>伸缩布局=弹性布局=伸缩盒布局=弹性盒布局= flexr布局</p>
+<figure data-type="image" tabindex="1"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572180282963.png" alt="1572180282963"></figure>
+<h2 id="fex布局父项常见属性">◆fex布局父项常见属性</h2>
+<figure data-type="image" tabindex="2"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572180552606.png" alt="1572180552606"></figure>
+<figure data-type="image" tabindex="3"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572180619410.png" alt="1572180619410"></figure>
+<figure data-type="image" tabindex="4"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572180641976.png" alt="1572180641976"></figure>
+<figure data-type="image" tabindex="5"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572181147367.png" alt="1572181147367"></figure>
+<pre><code class="language-css">/*默认的主轴是文轴row*/
+flex-direction: row:
+/* justify- content:是设置主轴上子元素的排列方式
+w justify-content: flex-start *
+/ justify-content: flex-end
+*让我们子元素居中对齐*/
+/*justify-content: center; w
+/*平分剩余空间*/
+/*justify-content: space-around; *
+/*先两边贴边,在分配剩余的空间*
+justify-content: space-between;
+
+</code></pre>
+<figure data-type="image" tabindex="6"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572181937209.png" alt="1572181937209"></figure>
+<pre><code class="language-css">flex-wrap:wrap;	
+</code></pre>
+<figure data-type="image" tabindex="7"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572182049646.png" alt="1572182049646"></figure>
+<pre><code class="language-css">align-items: flex-start;
+align-items: flex-end;
+align-items: center;
+
+</code></pre>
+<figure data-type="image" tabindex="8"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572182478375.png" alt="1572182478375"></figure>
+<figure data-type="image" tabindex="9"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572184087005.png" alt="1572184087005"></figure>
+<figure data-type="image" tabindex="10"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572184424687.png" alt="1572184424687"></figure>
+<h2 id="fex布局子项常见属性">◆fex布局子项常见属性</h2>
+<figure data-type="image" tabindex="11"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572184858341.png" alt="1572184858341"></figure>
+<pre><code class="language-css">&lt;p&gt;
+	&lt;span&gt;1&lt;/span&gt;
+	&lt;span&gt;2&lt;/span&gt;
+	&lt;span&gt;3&lt;/span&gt;
+&lt;/p&gt;
+
+p {
+	display: flex;
+	width: 60%;
+	height: 150px;
+	background-color: pink;
+
+	}
+	p span {
+		flex: 1;
+	}
+p span:nth-child(2) {
+		flex: 2;
+	}
+
+
+
+</code></pre>
+<figure data-type="image" tabindex="12"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572185560733.png" alt="1572185560733"></figure>
+<h2 id="携程网首页案例制作">◆携程网首页案例制作</h2>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[艺术]]></title>
+        <id>https://tjiahuadongzhou.github.io//post/yi-zhu</id>
+        <link href="https://tjiahuadongzhou.github.io//post/yi-zhu">
+        </link>
+        <updated>2019-12-09T10:20:40.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="github是一个面向开源及私有软件项目的托管平台因为只支持git-作为唯一的版本库格式进行托管故名github">GitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名GitHub。</h2>
+<h3 id="github于2008年4月10日正式上线除了git代码仓库托管及基本的-web管理界面以外还提供了订阅-讨论组-文本渲染-在线文件编辑器-协作图谱报表-代码片段分享gist等功能-目前其注册用户已经超过350万托管版本数量也是非常之多其中不乏知名开源项目-ruby-on-rails-jquery-python-等">GitHub于2008年4月10日正式上线，除了Git代码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过350万，托管版本数量也是非常之多，其中不乏知名开源项目 Ruby on Rails、jQuery、python 等。</h3>
+<p><code>2018年6月4日，微软宣布，通过75亿美元的股票交易收购代码托管平台GitHub。</code><br>
+🙁 我还看吗?<br>
+<img src="https://tjiahuadongzhou.github.io//post-images/1575886933569.jpg" alt=""></p>
+<figure data-type="image" tabindex="1"><img src="https://tjiahuadongzhou.github.io//post-images/1575886944123.jpg" alt=""></figure>
+<h3 id="我们的的">我们的的</h3>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="github是一个面向开源及私有软件项目的托管平台因为只支持git-作为唯一的版本库格式进行托管故名github">GitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名GitHub。</h2>
+<h3 id="github于2008年4月10日正式上线除了git代码仓库托管及基本的-web管理界面以外还提供了订阅-讨论组-文本渲染-在线文件编辑器-协作图谱报表-代码片段分享gist等功能-目前其注册用户已经超过350万托管版本数量也是非常之多其中不乏知名开源项目-ruby-on-rails-jquery-python-等">GitHub于2008年4月10日正式上线，除了Git代码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过350万，托管版本数量也是非常之多，其中不乏知名开源项目 Ruby on Rails、jQuery、python 等。</h3>
+<p><code>2018年6月4日，微软宣布，通过75亿美元的股票交易收购代码托管平台GitHub。</code><br>
+🙁 我还看吗?<br>
+<img src="https://tjiahuadongzhou.github.io//post-images/1575886933569.jpg" alt=""></p>
+<figure data-type="image" tabindex="1"><img src="https://tjiahuadongzhou.github.io//post-images/1575886944123.jpg" alt=""></figure>
+<h3 id="我们的的">我们的的</h3>
+<!-- more -->
+<h2 id="爱情就是最美的礼物">爱情就是最美的礼物</h2>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello འཇམ་དཔལ་དོན་གྲུབ]]></title>
         <id>https://tjiahuadongzhou.github.io//post/hello-gridea</id>

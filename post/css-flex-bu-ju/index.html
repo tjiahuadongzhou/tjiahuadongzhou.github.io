@@ -1,0 +1,201 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CSS Flex布局 | Gridea</title>
+<meta name="description" content="温故而知新" />
+<link rel="shortcut icon" href="https://tjiahuadongzhou.github.io//favicon.ico?v=1575887547518">
+<link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+<link rel="stylesheet" href="https://tjiahuadongzhou.github.io//styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="CSS Flex布局 | Gridea - Atom Feed" href="https://tjiahuadongzhou.github.io//atom.xml">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+  </head>
+  <body>
+    <div class="site-nav has-cover">
+      <div class="head">
+  <div class="inner">
+    <a class="site-name" href="https://tjiahuadongzhou.github.io/">
+        <span>Gridea</span>
+    </a>
+    <label class="burger" for="burger"></label>
+    <input id="burger" type="checkbox">
+    <button class="burger">
+      <div>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+    <nav class="info_nav">
+      
+        
+          <a href="https://tjiahuadongzhou.github.io//post/wode /">首页</a>
+        
+      
+        
+          <a href="/archives">归档</a>
+        
+      
+        
+          <a href="/tags">标签</a>
+        
+      
+        
+          <a href="/post/about">关于</a>
+        
+      
+    </nav>
+  </div>
+</div>
+    </div>
+    <article role="main" class="hentry has-cover">
+      
+        <div class="entry-cover js-cover" data-src="https://tjiahuadongzhou.github.io//post-images/css-flex-bu-ju.jpg" data-width="900" data-height="423" style="background-image:url(https://tjiahuadongzhou.github.io//post-images/css-flex-bu-ju.jpg); height: 80vw;">
+          <h1 class="post-title">CSS Flex布局</h1>
+        </div>
+      
+      <h1 class="entry-title" itemprop="headline">CSS Flex布局</h1>
+      <div class="entry-meta">
+        <time class="updated" datetime="2019-12-09 18:30:23">2019-12-09</time>
+        <span class="author vcard">
+          2 min read
+        </span>
+      </div>
+      <div class="post-content yue">
+        <h1 id="flex布局教程笔记">flex布局教程笔记</h1>
+<h2 id="fex布局原理">◆fex布局原理</h2>
+<h3 id="flex是-flexible-box的缩写意为弹性布局用来为盒状模型提供最大的灵活性任何一个容器都可以指定为fex布局">flex是 flexible Box的缩写,意为&quot;弹性布局”,用来为盒状模型提供最大的灵活性,任何一个容器都可以指定为fex布局</h3>
+<h3 id="当我们为父盒子设为fex布局以后子元素的ioat-cleari和-vertical-align属性将失效">当我们为父盒子设为fex布局以后,子元素的ioat、 cleari和 vertical- align属性将失效</h3>
+<p>伸缩布局=弹性布局=伸缩盒布局=弹性盒布局= flexr布局</p>
+<figure data-type="image" tabindex="1"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572180282963.png" alt="1572180282963"></figure>
+<h2 id="fex布局父项常见属性">◆fex布局父项常见属性</h2>
+<figure data-type="image" tabindex="2"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572180552606.png" alt="1572180552606"></figure>
+<figure data-type="image" tabindex="3"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572180619410.png" alt="1572180619410"></figure>
+<figure data-type="image" tabindex="4"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572180641976.png" alt="1572180641976"></figure>
+<figure data-type="image" tabindex="5"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572181147367.png" alt="1572181147367"></figure>
+<pre><code class="language-css">/*默认的主轴是文轴row*/
+flex-direction: row:
+/* justify- content:是设置主轴上子元素的排列方式
+w justify-content: flex-start *
+/ justify-content: flex-end
+*让我们子元素居中对齐*/
+/*justify-content: center; w
+/*平分剩余空间*/
+/*justify-content: space-around; *
+/*先两边贴边,在分配剩余的空间*
+justify-content: space-between;
+
+</code></pre>
+<figure data-type="image" tabindex="6"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572181937209.png" alt="1572181937209"></figure>
+<pre><code class="language-css">flex-wrap:wrap;	
+</code></pre>
+<figure data-type="image" tabindex="7"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572182049646.png" alt="1572182049646"></figure>
+<pre><code class="language-css">align-items: flex-start;
+align-items: flex-end;
+align-items: center;
+
+</code></pre>
+<figure data-type="image" tabindex="8"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572182478375.png" alt="1572182478375"></figure>
+<figure data-type="image" tabindex="9"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572184087005.png" alt="1572184087005"></figure>
+<figure data-type="image" tabindex="10"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572184424687.png" alt="1572184424687"></figure>
+<h2 id="fex布局子项常见属性">◆fex布局子项常见属性</h2>
+<figure data-type="image" tabindex="11"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572184858341.png" alt="1572184858341"></figure>
+<pre><code class="language-css">&lt;p&gt;
+	&lt;span&gt;1&lt;/span&gt;
+	&lt;span&gt;2&lt;/span&gt;
+	&lt;span&gt;3&lt;/span&gt;
+&lt;/p&gt;
+
+p {
+	display: flex;
+	width: 60%;
+	height: 150px;
+	background-color: pink;
+
+	}
+	p span {
+		flex: 1;
+	}
+p span:nth-child(2) {
+		flex: 2;
+	}
+
+
+
+</code></pre>
+<figure data-type="image" tabindex="12"><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572185560733.png" alt="1572185560733"></figure>
+<h2 id="携程网首页案例制作">◆携程网首页案例制作</h2>
+
+      </div>
+      <div class="entry-block">
+        <div class="entry-tags">
+          
+            <a href="https://tjiahuadongzhou.github.io//tag/IN3xUvgJL">
+              CSS布局
+            </a>
+          
+        </div>
+      </div>
+    </article>
+    
+    
+      <section class="post-section prev-post">
+        <div class="inner">
+          <h3>后一篇</h3>
+          <a href="https://tjiahuadongzhou.github.io//post/yi-zhu">
+            <strong>艺术</strong>
+          </a>
+        </div>
+      </section>
+    
+
+    
+
+    <footer class="footer">
+  <div class="main">
+    <a href="https://tjiahuadongzhou.github.io/">
+      <img class="avatar" src="https://tjiahuadongzhou.github.io//images/avatar.png?v=1575887547518" alt="Gridea">
+    </a>
+    <div class="footer__social">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <p class="footer__sosumi">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </p>
+    <a class="footer-rss" href="https://tjiahuadongzhou.github.io//atom.xml">RSS</a>
+  </div>
+</footer>
+
+<script src="https://tjiahuadongzhou.github.io//media/prism.js"></script>
+<script>
+  Prism.highlightAll()
+</script>
+
+  </body>
+</html>
